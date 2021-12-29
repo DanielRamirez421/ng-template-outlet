@@ -1,13 +1,15 @@
-<div class="p-5 border-bottom border-dark">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-8">
-        <div class="card shadow text-center bg-light">
-          <h2 class="text-info">ngTemplateOutlet example</h2>
-          <ng-container [ngTemplateOutlet]="headerTemplate"
-                        [ngTemplateOutletContext]="{ $implicit: 'This text is passed from component' }">
-          </ng-container>
-        </div>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <div class="card shadow text-center bg-light">
+        <h2 class="text-info">ngTemplateOutlet example</h2>
+        <ng-container
+          [ngTemplateOutlet]="headerTemplate"
+          [ngTemplateOutletContext]="{
+            $implicit: 'This text is passed from component'
+          }"
+        >
+        </ng-container>
       </div>
     </div>
   </div>
@@ -17,4 +19,3 @@
   <h4><i>this text is passed from header template</i></h4>
   <p>{{ data }}</p>
 </ng-template>
-
