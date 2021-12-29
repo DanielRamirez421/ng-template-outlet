@@ -2,10 +2,10 @@ import { data } from './../../utils/utils';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-component-as-template',
-  templateUrl: './component-as-template.component.html'
+  selector: 'app-template-as-input',
+  templateUrl: './template-as-input.component.html',
 })
-export class ComponentAsTemplateComponent implements OnInit {
+export class TemplateAsInputComponent implements OnInit {
 
   public data = data;
 
