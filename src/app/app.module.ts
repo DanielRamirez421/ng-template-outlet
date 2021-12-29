@@ -8,6 +8,7 @@ import { ComponentAsTemplateComponent } from './components/component-as-template
 import { CardComponent } from './components/card/card.component';
 import { TemplateAsInputComponent } from './components/template-as-input/template-as-input.component';
 import { ParentComponent } from './components/template-as-input/parent/parent.component';
+import { RenderingBasedConditionComponent } from './components/rendering-based-condition/rendering-based-condition.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ParentComponent } from './components/template-as-input/parent/parent.co
     ComponentAsTemplateComponent,
     CardComponent,
     TemplateAsInputComponent,
-    ParentComponent
+    ParentComponent,
+    RenderingBasedConditionComponent
   ],
   imports: [
     BrowserModule,

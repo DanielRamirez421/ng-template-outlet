@@ -1,0 +1,22 @@
+<div class="container p-4 text-center">
+  <h4 class="mb-4">Renderind diferent types if templates based on condition</h4>
+
+  <div class="wrapper">
+    <div *ngFor="let d of data; index as i">
+      <ng-container
+        *ngTemplateOutlet="
+          getSelectedComponentTemplate(d.type);
+          context: { $implicit: { data: d } }
+        "
+      ></ng-container>
+    </div>
+  </div>
+</div>
+
+<ng-template #cardOne let-obj>
+  <app-card [data]="obj.data"></app-card>
+</ng-template>
+
+<ng-template #cardTwo let-obj>
+  <app-card [data]="obj.data"></app-card>
+</ng-template>
